@@ -1,0 +1,28 @@
+#calculator {
+    width: 80%;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: grid;
+    grid: "numbers void operations" auto "results void operations" auto /48% 4% 48%;
+}
+
+:global(#numbers)    { grid-area: numbers; }
+:global(#operations) { grid-area: operations;}
+:global(#results)    { grid-area: results; }
+
+:global(#results > .listBtnItem > button) { background-color: darkgoldenrod;}
+
+ul {
+    list-style: none;
+}
+
+.btnList {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
