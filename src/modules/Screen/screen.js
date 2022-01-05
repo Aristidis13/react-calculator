@@ -1,16 +1,14 @@
 import React from 'react';
+import styles from './screen.module.css';
 
 export const Screen = (props) => {
     return(
-        <section id="screen">
+        <section id={styles.screen}>
             {props.input}
         </section>
     )
 }
 
-Screen.show = (msg) => {
-    if(this.input.toString() !== '')
-        Screen.props.input += msg.toString();
-    else 
-        Screen.props.input = Screen.props.input;
-}
+// Screen.show = (msg) => {
+//     Screen.props.input += msg.toString();
+// }
