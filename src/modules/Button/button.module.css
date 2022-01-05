@@ -1,0 +1,12 @@
+:global(.listBtnItem) {
+    flex: 30%;
+    max-width: 50%;
+    min-width: auto;
+}
+
+.button {
+    background-color: green;
+    padding: .5rem 2.5rem;
+    font-size: 3rem;
+    width:100%
+}
