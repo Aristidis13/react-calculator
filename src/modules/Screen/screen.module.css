@@ -1,0 +1,11 @@
+#screen {
+    height: 7rem;
+    border: 1rem solid green;
+    display: flex;
+    justify-content: flex-end;
+    font-size:4rem;
+    align-items: center;
+    color:darkslategrey
+}
+
+
