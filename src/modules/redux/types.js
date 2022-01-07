@@ -1,0 +1,7 @@
+export const PRESS_BUTTON = 'PRESS_BUTTON';
+// export const PRESS_RESET  =  'PRESS_RESET';
+// export const PRESS_DELETE = 'PRESS_DELETE';
+// export const PRESS_NUMBER = 'PRESS_NUMBER';
+// export const PRESS_EQUAL  =  'PRESS_EQUAL';
+// export const PRESS_BI_DIRECTIONAL = 'PRESS_BI_DIRECTIONAL';
+// export const PRESS_ONE_DIRECTIONAL = 'PRESS_ONE_DIRECTIONAL';
