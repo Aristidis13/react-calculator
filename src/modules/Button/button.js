@@ -1,23 +1,20 @@
-import {PureComponent} from 'react';
 import styles from './button.module.css';
-import * as buttonActions from '../redux/button/actions.js';
+import {pressBtn} from '../redux/actions.js';
+import {useDispatch} from 'react-redux';
+import {pure} from 'recompose'
 
-export default class Button extends PureComponent {
-    render() {
-        return(
-            <button type="button" onClick="" className={styles.button} value={this.props.text} data-button-type={this.props.type}>
-                {this.props.text}
-            </button>
-        )
-    }
+const Button = (props) => {
+    const dispatch = useDispatch();
+    return(
+        <button type="button"
+                onClick={(e) => dispatch(pressBtn(e))}
+                className={styles.button}
+                data-button-type={props.buttonType}
+                data-value={props.text}
+        >
+            {props.text}
+        </button>
+    )
 }
-/*
-const mapStateToProps = state => {
-    screenCharacters: state.screenCharacters
-}
 
-const mapDispatchToProps = state => {
-    return {
-
-    }
-}*/
+export default Button;
