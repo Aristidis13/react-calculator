@@ -12,10 +12,10 @@ const reducer = (state= initialState,action) => {
     else if (action.type === "equal") console.log("Equal pressed");
     return initialState;
 }
-/* Thelei switch gia kathe pithani katastash tou calculator */
+/* Thelei switch gia kathe pithani katastash tou calculator 
 const numberPressed = (type,text) = {
         screenState: 'hasNumber',
         screenText: state.screenText + text
     }
-
+*/
 export default reducer;
