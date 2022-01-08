@@ -1,7 +1,5 @@
 import {Screen} from '../Screen/screen.js';
-import {buttonsThatAreNumbers as nbtns, 
-        buttonsThatAreOperations as obtns,
-        buttonsThatAreResults as rbtns} from '../../buttonsCreator.js';
+import * as btnTypes from './../../buttonsCreator.js'
 import styles from './calculator.module.css';
 import {Provider} from 'react-redux';
 import store from './../redux/store.js';
@@ -12,9 +10,16 @@ export const Calculator = () => {
         <section id={styles.calculator}>
             <Screen input=""/>
             <div className={styles.buttons}>
-                <ul id="numbers" className={styles.btnList}> {nbtns} </ul>
-                <ul id="operations" className={styles.btnList}> {obtns} </ul>
-                <ul id="results" className={styles.btnList}>{rbtns} </ul>
+                <ul id="numbers" className={styles.btnList}> {btnTypes.numbers} </ul>
+                <div id="operations">
+                    <ul className={styles.btnList}> {btnTypes.biDirectional} </ul>
+                    <ul className={styles.btnList}> {btnTypes.oneDirectional} </ul>
+                </div>
+                <ul id="results" className={styles.btnList}>
+                    {btnTypes.reset}
+                    {btnTypes.equal}
+                    {btnTypes.del}
+                </ul>
             </div>
         </section>
     </Provider>
