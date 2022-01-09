@@ -1,11 +1,9 @@
 import Button from './modules/Button/button.js'
-import {useSelector,useDispatch} from 'react-redux' //Will be used for the different rendering depending on state
-
 
 export const numbers = createJSXSyntax( [...Array(10).keys()], "number" );
 
 export const oneDirectional = createJSXSyntax(
-[ "tan", "cos", "sin", "r" ,  "e" , "sqr", "log", "ln" ,  "x!", "."], "onedirectional");
+[ "tan", "cos", "sin", "sinh" ,  "e" , "sqr", "log", "ln" ,  "x!", "."], "onedirectional");
 
 export const biDirectional = createJSXSyntax([ "+", "-", "%", "x^y", "/", ],"bidirectional");
 
