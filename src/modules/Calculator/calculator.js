@@ -13,6 +13,7 @@ export const Calculator = () => {
                 <ul id="numbers" className={styles.btnList}> {btnTypes.numbers} </ul>
                 <div id="operations">
                     <ul className={styles.btnList}> {btnTypes.biDirectional} </ul>
+                    <ul className={styles.btnList}> {btnTypes.parenthesized} </ul>
                     <ul className={styles.btnList}> {btnTypes.oneDirectional} </ul>
                 </div>
                 <ul id="results" className={styles.btnList}>
