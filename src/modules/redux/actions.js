@@ -1,6 +1,6 @@
-export const pressBtn = (event) => {
+export const pressBtn = (e) => {
     return {
-        text: event.target.innerText,
-        type: event.target.dataset.buttonType
+        text: e.target.innerText,
+        type: e.target.dataset.actionType
     }
 }
