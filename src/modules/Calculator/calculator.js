@@ -10,10 +10,13 @@ export const Calculator = () => {
         <section id={styles.calculator}>
             <Screen input=""/>
             <div className={styles.buttons}>
-                <ul id="numbers" className={styles.btnList}> {btnTypes.numbers} </ul>
+                <ul id="numbers" className={styles.btnList}> 
+                    {btnTypes.PI}
+                    {btnTypes.numbers}
+                    {btnTypes.dot}
+                </ul>
                 <div id="operations">
                     <ul className={styles.btnList}> {btnTypes.biDirectional} </ul>
-                    <ul className={styles.btnList}> {btnTypes.parenthesized} </ul>
                     <ul className={styles.btnList}> {btnTypes.oneDirectional} </ul>
                 </div>
                 <ul id="results" className={styles.btnList}>
