@@ -11,9 +11,7 @@ export const Calculator = () => {
             <Screen input=""/>
             <div className={styles.buttons}>
                 <ul id="numbers" className={styles.btnList}> 
-                    {btnTypes.PI}
                     {btnTypes.numbers}
-                    {btnTypes.dot}
                 </ul>
                 <div id="operations">
                     <ul className={styles.btnList}> {btnTypes.biDirectional} </ul>
