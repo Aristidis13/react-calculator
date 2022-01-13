@@ -1,11 +1,22 @@
 #screen {
     height: 7rem;
-    border: 1rem solid green;
+    border: .5rem solid green;
     display: flex;
     justify-content: flex-end;
     font-size:4rem;
     align-items: center;
+    overflow-x: auto;
     color:darkslategrey
 }
 
+.expression {
+    display: inline-block;
+    margin: 0;
+}
 
+@media (max-width: 600px) {
+    #screen {
+        height:4rem;
+        font-size: 2rem;
+    }
+}

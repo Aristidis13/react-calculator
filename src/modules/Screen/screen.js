@@ -5,8 +5,8 @@ import {useSelector} from 'react-redux'
 export const Screen = (props) => {
     const screenText = useSelector(state =>state.screenText);
     return(
-        <section id={styles.screen} onKeyDown={function(){console.log('screen')}}>
-            {screenText}
+        <section id={styles.screen}>
+            <p className={styles.expression}>{screenText}</p>
         </section>
     )
 }
