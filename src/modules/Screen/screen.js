@@ -10,3 +10,4 @@ export const Screen = (props) => {
         </section>
     )
 }
+export default Screen;
