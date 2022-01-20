@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##Description
+## Description
 This is a side project I made to learn the basics of react and redux and practice in Modular Programming.
 There only 3 Components-Modules:
  - A Screen Section
