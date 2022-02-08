@@ -80,7 +80,7 @@ const calculate = (operator,n1,n2=null) => {
         case '-'   : return Number(n1) - Number(n2);
         case '%'   : return n1 % n2;
         case '/'   : return n1 / n2;
-        case '*'   : return n1 / n2;
+        case '*'   : return n1 * n2;
         case 'pow' : return Math.pow(n1,n2);
         default : return 'error';
     }
